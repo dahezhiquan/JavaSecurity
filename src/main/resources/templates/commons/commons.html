@@ -195,12 +195,12 @@
 
             <li class="nav-item">
                 <a href="#middle_submenu" data-toggle="collapse"
-                   th:class="${(active=='xstream.html' || active=='shiro.html' || active=='fastjson.html' || active=='log4j.html' || active=='jackson.html') ? 'nav-link active':'nav-link'}"><i
+                   th:class="${(active=='xstream.html' || active=='fastjson.html' || active=='log4j.html' || active=='jackson.html') ? 'nav-link active':'nav-link'}"><i
                         class="lnr lnr-drop"></i>
                     <span>组件漏洞</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 
                 <div id="middle_submenu"
-                     th:class="${(active=='xstream.html' || active=='shiro.html' || active=='fastjson.html' || active=='log4j.html' || active=='jackson.html') ? 'collapsed':'collapse'}">
+                     th:class="${(active=='xstream.html'  || active=='fastjson.html' || active=='log4j.html' || active=='jackson.html') ? 'collapsed':'collapse'}">
                     <ul class="nav flex-column">
                         <li>
                             <a th:class="${active=='xstream.html' ? 'nav-link active':'nav-link'}"
@@ -221,11 +221,6 @@
                             <a th:class="${active=='log4j.html' ? 'nav-link active':'nav-link'}"
                                th:href="@{/index/log4j}">
                                 <i class="lnr lnr-bug"></i><span>Log4j2</span></a>
-                        </li>
-                        <li>
-                            <a th:class="${active=='shiro.html' ? 'nav-link active':'nav-link'}"
-                               href="#">
-                                <i class="lnr lnr-bug"></i><span>Shiro</span></a>
                         </li>
 
                     </ul>
