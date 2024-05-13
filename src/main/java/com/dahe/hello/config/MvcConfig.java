@@ -10,7 +10,7 @@ public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("index");
-        registry.addViewController("/login").setViewName("login"); // OK
+        registry.addViewController("/login").setViewName("login");
         registry.addViewController("/index").setViewName("index");
         registry.addViewController("/index/xss").setViewName("xss_reflect");
         registry.addViewController("/index/xss/store").setViewName("xss_store");
@@ -39,10 +39,8 @@ public class MvcConfig implements WebMvcConfigurer {
         registry.addViewController("/index/cors").setViewName("cors");
         registry.addViewController("/index/captcha").setViewName("captcha_vul");
         registry.addViewController("/index/swagger").setViewName("swagger");
-        registry.addViewController("/index/jwt").setViewName("jwt"); // OK
+        registry.addViewController("/index/jwt").setViewName("jwt");
         registry.addViewController("/index/xpath").setViewName("xpath");
-        registry.addViewController("/index/csv").setViewName("csv_injection");
-
     }
 
 
